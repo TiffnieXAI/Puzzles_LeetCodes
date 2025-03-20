@@ -61,7 +61,7 @@ void josephus(int a[], int n, int k, int index) {
 
     //recursive case
     else {
-        //Process 1: Find the element to be executed
+        //Process 1: Find the element to be eliminated
         index = (index + k - 1) % n;
         /* step-by-step process explanation:
         index - tracks where we previously are after elimination
