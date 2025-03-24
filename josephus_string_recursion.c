@@ -47,6 +47,7 @@ int main() {
     }
 
     // Step 4: Start the Josephus elimination process
+	printf("\n\n˜”*°•.˜”*°• 🎮🎮G A M E  S T A R T 🎮🎮 •°*”˜.•°*”˜\n\n");
     josephus(a, size, steps, index);
 }
 
@@ -64,7 +65,9 @@ void josephus(char a[5][10], int size, int steps, int index) {
         printf("🏆 Last man standing: %s\n", a[0]);
         return;
     }
-
+    
+    getchar();
+    getchar();
     //  Step 1: Find the player to eliminate
     index = (index + (steps - 1)) % size;
     printf("❌ Eliminated: %s\n", a[index]);
@@ -90,8 +93,6 @@ void josephus(char a[5][10], int size, int steps, int index) {
     }
     printf("+\n\n\n"); // Bottom border
 
-    getchar();
-    getchar();
 
     // Step 3: Shift elements to remove eliminated player
     for (int i = index; i < size - 1; i++) {
